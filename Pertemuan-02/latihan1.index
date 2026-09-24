@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>Pertemuan-02</title>
+</head>
+<body>
+<h1>List Berurutan</h1>
+<ol type="I">
+  <li>Sistem Informasi</li>
+  <li>Teknik Informatika</li>
+  <li>Bisnis Digital</li>
+</ol>
+<h1>List Tidak Berurutan</h1>
+<ul>
+  <li>Sistem Informasi</li>
+  <li>Teknik Informatika</li>
+  <li>Bisnis Digital</li>
+</ul>
+<h1>Menu Makanan</h1>
+<ol type="a">
+  <li>Nasi Goreng
+<ol type="1">
+  <li>Ayam</li>
+  <li>Ati Ayam</li>
+  <li>Telor</li>
+</ol>
+</li>
+  <li>Nasi Bakar
+<ol type="1">
+    <li>Pedas Level1</li>
+    <li>Pedas Level2</li>
+    <li>Pedas Level3</li>
+</ol>
+<p>Isi Pertemuan-02.</p>
+</body>
+</html>
