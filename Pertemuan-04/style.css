@@ -1,7 +1,7 @@
-      * {
-        box-sizing: border-box;
-      }
-
+<style>
+ { 
+    box-sizing: border-box;
+ }
       body {
         margin: 0;
         padding: 12px;
@@ -12,45 +12,48 @@
 
       /* Header */
       header {
-        background-color: #003366;
-        color: #ffffff;
-        padding: 20px;
-        margin-bottom: 20px;
-        border: 1px solid #00264d;
+      background-color: #003366;
+      color: #ffffff;
+      padding: 20px;
+      margin-bottom: 20px;
+      border: 1px solid #00264d;
       }
-      
+
       header h1 {
-        margin: 0 0 16px;
-        font-size: 28px;
+      margin: 0 0 16px;
+      font-size: 28px;
       }
 
       nav ul {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: flex-start;
-        gap: 8px;
-        margin: 0;
-        padding: 0;
-        list-style: none;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      gap: 8px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
       }
 
       nav a {
-        color: #ffffff;
-        font-weight: bold;
-        text-decoration: none;
+      color: #ffffff;
+      font-weight: bold;
+      text-decoration: none;
       }
 
       main {
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 16px;
+      display: grid;
+      grid-template-columns: 1fr;
+      background-color: #eef2f7;
+      gap: 20px;
+      padding: 20px;
       }
 
-      section h1 {
-        width: 100%;
+      section {
+      width: auto;
+      margin: 0;
       }
-
+      
       #home {
         background-color: #ffffff;
         border: 1px solid #d0d7de;
@@ -59,16 +62,16 @@
       }
 
       #home h2 {
-        color: #003366;
-        border-bottom: 2px solid #003366;
-        padding-bottom: 6px;
-        margin-top: 0;
-        margin-bottom: 16px;
+      color: #003366;
+      border-bottom: 2px solid #003366;
+      padding-bottom: 6px;
+      margin-top: 0;
+      margin-bottom: 16px;
       }
 
       #home p {
-        line-height: 1.6;
-        margin: 0 0 16px;
+      line-height: 1.6;
+      margin: 0 0 16px;
       }
 
       #home img {
@@ -82,13 +85,13 @@
       #about {
         background-color: #ffffff;
         border: 1px solid #d0d7de;
-        padding: 20px 0;
+        padding: 20px;
         margin: 0;
         font-family: Arial, sans-serif;
       }
 
       #about h2 {
-        color: #1f4e78;
+        color: #003366;
         border-bottom: 2px solid #003366;
         padding-bottom: 6px;
         margin-top: 0;
@@ -120,7 +123,7 @@
         padding: 20px;
         margin: 0;
         font-family: Arial, sans-serif;
-        grid-column: 1 / -1;
+        grid-column: 1 / -1;  
       }
 
       #contact h2 {
@@ -153,8 +156,8 @@
       }
 
       #contact textarea {
-        min-height: 80px;
-        resize: vertical;
+      min-height: 80px;
+      resize: vertical;
       }
 
       #contact button {
@@ -166,15 +169,14 @@
         margin: 8px 6px 0 0;
         border: 1px solid #003366;
       }
-
       /* Footer */
       footer {
-        background-color: #003366;
-        color: #ffffff;
-        text-align: center;
-        padding: 14px 20px;
-        margin-top: 20px;
-        border: 1px solid #00264d;
+      background-color: #003366;
+      color: #ffffff;
+      text-align: center;
+      padding: 14px 20px;
+      margin-top: 20px;
+      border: 1px solid #00264d;
       }
 
       footer p {
@@ -182,19 +184,21 @@
       }
 
       @media (min-width: 768px) {
-        /* aturan CSS untuk viewport dengan lebar minimal 768px */
-        main {
-          grid-template-columns: 1fr 1fr;
-        }
 
-        nav ul {
-          flex-direction: row;
-          justify-content: flex-start;
-          align-items: center;
-          gap: 16px;
-        }
-
-        #contact {
-          grid-column: 1 / -1;
-        }
+      /* aturan CSS untuk viewport dengan lebar minimal 768px */
+      main {
+      grid-template-columns: 1fr 1fr;
       }
+      
+      nav ul {
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 16px;
+      }
+
+      #contact {
+      grid-column: 1 / -1;  
+      }
+    }
+    </style>
