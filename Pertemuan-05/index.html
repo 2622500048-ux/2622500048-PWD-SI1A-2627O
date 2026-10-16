@@ -6,11 +6,26 @@
     <title>Profil Mahasiswa</title>
     <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
     <header>
-        <h1>Profil Mahasiswa</h1>
+        <div class="header-top">
+            <h1>Profil Mahasiswa</h1>
+
+            <button
+               class="nav-toggle"
+               id="navToggle"
+               type="button"
+               aria-label="Buka navigasi"
+               aria-controls="navMenu"
+               aria-expanded="false"
+               >
+                 &#9776;
+            </button>
+        </div>
+
         <nav>
-            <ul>
+            <ul id="navMenu">
                 <li><a href="#home">Beranda</a></li>
                 <li><a href="#about">Tentang</a></li>
                 <li><a href="#contact">Kontak</a></li>
@@ -34,18 +49,20 @@
                 <h3>Target Belajar</h3>
                 <ol>
                     <li>Memahami struktur HTML5.</li>
-                    <li>Menyusun halaman web semantik</li>
+                    <li>Menyusun halaman web semantik.</li>
                     <li>Memvalidasi dokumen HTML.</li>
                 </ol>
             </article>
         </section>
+
         <section id="contact">
             <h2>Kontak</h2>
             <p>Kunjungi <a href="https://github.com/2622500048-ux/2622500048-PWD-SI1A-26271">profil Github saya</a>.</p>
 
-            <form action="index.html" method="get">
+            <form id="contactForm" action="index.html" method="get" novalidate>
               <div class="form-group">
                 <label for="nama">Nama Lengkap</label><br>
+
                 <input class="input-form"
                        type="text"
                        id="nama"

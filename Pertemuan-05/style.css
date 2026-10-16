@@ -20,16 +20,43 @@
       }
 
       header h1 {
-      margin: 0 0 16px;
+      margin: 0;
       font-size: 28px;
       }
 
+      .header-top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      #navMenu {
+        display: none;
+      }
+
+      #navMenu.nav-open {
+        display: flex;
+        flex-direction: column;
+        margin-top: 16px;
+      }
+
+      .nav-toggle {
+        display: block;
+        border: none;
+        background: transparent;
+        color: #ffffff;
+        font-size: 1.8rem;
+        Line-height: 1;
+        cursor: pointer;
+      }
+      
+      /* Navigasi */
       nav ul {
       display: flex;
       flex-direction: column;
       justify-content: flex-start;
       align-items: flex-start;
-      gap: 8px;
+      gap: 12px;
       margin: 0;
       padding: 0;
       list-style: none;
@@ -40,20 +67,19 @@
       font-weight: bold;
       text-decoration: none;
       }
-
+      
+      /* Layout Utama */
       main {
       display: grid;
       grid-template-columns: 1fr;
-      background-color: #eef2f7;
-      gap: 20px;
-      padding: 20px;
+      gap: 16px;
       }
 
       section {
-      width: auto;
-      margin: 0;
+      width: 100%;
       }
       
+      /* Bagian Home */
       #home {
         background-color: #ffffff;
         border: 1px solid #d0d7de;
@@ -81,13 +107,13 @@
         height: auto;
         border: 1px solid #cbd5e1;
       }
-
+      
+      /* Bagian Tentang */
       #about {
         background-color: #ffffff;
         border: 1px solid #d0d7de;
         padding: 20px;
         margin: 0;
-        font-family: Arial, sans-serif;
       }
 
       #about h2 {
@@ -116,14 +142,13 @@
         padding: 8px 24px;
         border: 1px solid #e6e6e6;
       }
-
+      
+      /* Bagian Kontak */
       #contact {
         background-color: #f8fafc;
         border: 1px solid #cbd5e1;
         padding: 20px;
-        margin: 0;
-        font-family: Arial, sans-serif;
-        grid-column: 1 / -1;  
+        margin: 0; 
       }
 
       #contact h2 {
@@ -169,6 +194,7 @@
         margin: 8px 6px 0 0;
         border: 1px solid #003366;
       }
+
       /* Footer */
       footer {
       background-color: #003366;
@@ -183,13 +209,20 @@
         margin: 0;
       }
 
-      @media (min-width: 768px) {
-
-      /* aturan CSS untuk viewport dengan lebar minimal 768px */
-      main {
-      grid-template-columns: 1fr 1fr;
+      .form-feedback-error {
+        color: #c62828;
       }
-      
+
+      .form-feedback-success {
+        color: #2e7d32;
+      }
+
+      /* Layout untuk viewport yang lebih lebar */
+      @media (min-width: 768px) {
+        nav {
+          margin-top: 16px;
+        }
+
       nav ul {
       flex-direction: row;
       justify-content: flex-start;
@@ -197,8 +230,21 @@
       gap: 16px;
       }
 
+      main {
+        grid-template-columns: 1fr 1fr;
+      }
+
       #contact {
       grid-column: 1 / -1;  
+      }
+
+      #navMenu {
+        display: flex;
+        flex-direction: row;
+      }
+
+      .nav-toggle {
+        display: none;
       }
     }
     </style>
