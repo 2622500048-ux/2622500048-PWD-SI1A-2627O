@@ -35,7 +35,7 @@ contactForm.addEventListener("submit", (event) => {
 
     const email = emailInput.value.trim();
     const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!email.Pattern.test(email)) {
+    if (!emailPattern.test(email)) {
         formFeedback.textContent = "Masukkan alamat email yang valid.";
         return;
     }
@@ -56,7 +56,7 @@ contactForm.addEventListener("submit", (event) => {
         'input[name="jenis_pesan"]:checked',
     );
     if (!jenisPesan) {
-        'input[name="jenis_pesan"]:checked',
+        formFeedback.textContent = "Pilih jenis pesan.";
         return;
     }
 
@@ -68,12 +68,19 @@ contactForm.addEventListener("submit", (event) => {
 
     const prodi = prodiInput.value;
     if (prodi === "") {
-        formFeedback.textContent = "Pesan harus diisi.";
+        formFeedback.textContent = "Pilih Program Studi.";
         return;
     }
 
+    const pesan = pesanInput.value.trim();
+    if (pesan.length === 0) {
+        formFeedback.textContent = "Pesan harus diisi.";
+        return;
+    }
+    
     if (pesan.length > 300) {
         formFeedback.textContent = "Pesan maksimal 300 karakter.";
+        return;
     }
 
      formFeedback.textContent = "Form berhasil divalidasi.";
