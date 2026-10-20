@@ -1,5 +1,4 @@
-<style>
- { 
+* { 
     box-sizing: border-box;
  }
       body {
@@ -247,4 +246,3 @@
         display: none;
       }
     }
-    </style>
