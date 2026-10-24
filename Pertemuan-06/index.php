@@ -5,12 +5,15 @@ $nim = "2622500048";
 $namaMahasiswa = "Risva Auvira"; 
 $programStudi = "SI"; 
 $tahunAkademik = "2026/2027"; 
-$semester = 1; 
-$ipk = 4.00; 
+$semester = 2; 
+$ipk = 3.75; 
 $statusAktif = true; 
 $catatanTambahan = null; 
 const NAMA_MATA_KULIAH = "Pemrograman Web Dasar"; 
 const PROFIL_GITHUB = "satpamal";
+// Bagian 2: Operator 
+$batasSemester = 8; 
+$sisaSemester = $batasSemester - $semester;
 ?> 
 <!DOCTYPE html>
 <html lang="id">
@@ -60,6 +63,7 @@ const PROFIL_GITHUB = "satpamal";
                 <h2>Tentang Saya</h2>
             <article>
                 <h3>Profil Singkat</h3>
+                <p>Sisa semester hingga batas: <?php echo $sisaSemester; ?></p> 
                 <p>Saya mahasiswa Program Studi Sistem Informasi.</p>
 
                 <h3>Target Belajar</h3>

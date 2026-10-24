@@ -9,3 +9,4 @@ Perbedaan keluaran statis dan dinamis serta hasil pengujian aktual
 Deklarasi variabel dan pengujian aktual
 Deklrasai konstanta dan hasil pemeriksaan aktual
 Penggunaan Variabel dan Konstanta untuk Menghasilkan Konten Halaman Profil Mahasiswa 
+Menguji operator artimetika dan penugasan dengan hasil tampilan sisa semester dengan batas: 6
