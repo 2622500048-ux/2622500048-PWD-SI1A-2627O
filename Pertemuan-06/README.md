@@ -11,3 +11,4 @@ Deklrasai konstanta dan hasil pemeriksaan aktual
 Penggunaan Variabel dan Konstanta untuk Menghasilkan Konten Halaman Profil Mahasiswa 
 Menguji operator artimetika dan penugasan dengan hasil tampilan sisa semester dengan batas: 6
 Menerapkan operator perbandingan dan operator logika hingga berubah menjadi "Pemeriksaan rentang semester: Perlu diperiksa."
+Menerapkan percabangan if elseif else PHP menjadi semester 2 (semester awal)
