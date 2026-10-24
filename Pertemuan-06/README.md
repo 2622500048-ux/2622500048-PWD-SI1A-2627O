@@ -13,3 +13,4 @@ Menguji operator artimetika dan penugasan dengan hasil tampilan sisa semester de
 Menerapkan operator perbandingan dan operator logika hingga berubah menjadi "Pemeriksaan rentang semester: Perlu diperiksa."
 Menerapkan percabangan if elseif else PHP menjadi semester 2 (semester awal)
 Menerapkan operator ternary pada profil mahasiswa
+Percabangan switch-case-default pada bagian Profil Singkat
