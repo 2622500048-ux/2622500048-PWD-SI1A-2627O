@@ -20,3 +20,4 @@ Menampilkan ipk dengan number_format()
 Memeriksa Nilai Null
 Menampilkan Tahun dengan Fungsi date()
 Mmenerapkan sintaks keluaran singkat PHP
+Penyesuaian atribut action pada formulir ke index.php
