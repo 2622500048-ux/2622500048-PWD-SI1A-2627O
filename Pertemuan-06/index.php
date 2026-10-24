@@ -96,7 +96,6 @@ switch ($programStudi) {
                 <p>Catatan tambahan: <?php echo $catatanTambahan === null ? "Belum ada" : $catatanTambahan; 
                 ?>
                 </p> 
-                <p>Saya mahasiswa Program Studi <?php echo $namaProdi; ?>.</p>
 
                 <h3>Target Belajar (Perulangan for)</h3>
                 <ol>
@@ -235,7 +234,7 @@ Kunjungi
     </main>
 
     <footer>
-        <p>&copy; 2026 RIsva Auvira {2622500048}</p>
+       <p>&copy; <?= date("Y") ?> <?php echo $namaMahasiswa; ?> [<?= $nim ?>]</p> 
     </footer>
     <script src="script.js"></script>
 </body>
