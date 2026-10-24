@@ -16,3 +16,4 @@ Menerapkan operator ternary pada profil mahasiswa
 Percabangan switch-case-default pada bagian Profil Singkat
 Menerapkan perulangan for pada Target Belajar
 Menerapkan perulangan while pada Nomor Semester
+Menampilkan ipk dengan number_format()
