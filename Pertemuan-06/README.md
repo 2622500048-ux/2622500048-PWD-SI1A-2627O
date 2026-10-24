@@ -7,3 +7,4 @@ Penyisipan PHP dalam HTML pada alamat proyek http://localhost/2622500048%20-%20P
 Penggunaan komentar echo, dan print pada alamat proyek 
 Perbedaan keluaran statis dan dinamis serta hasil pengujian aktual
 Deklarasi variabel dan pengujian aktual
+Deklrasai konstanta dan hasil pemeriksaan aktual
