@@ -17,3 +17,4 @@ Percabangan switch-case-default pada bagian Profil Singkat
 Menerapkan perulangan for pada Target Belajar
 Menerapkan perulangan while pada Nomor Semester
 Menampilkan ipk dengan number_format()
+Memeriksa Nilai Null
