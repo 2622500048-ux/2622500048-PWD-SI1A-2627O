@@ -1,1 +1,1 @@
-# Pertemuan-07
+Memindahkan index.php, script.js, style.css, dan img dari pertemuan 6 ke pertemuan 7
