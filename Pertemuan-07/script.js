@@ -76,8 +76,9 @@ contactForm.addEventListener("submit", (event) => {
  formFeedback.textContent = "Pesan maksimal 300 karakter.";
  return;
  }
- formFeedback.textContent = "Form berhasil divalidasi.";
- formFeedback.className = "form-feedback-success";
+formFeedback.textContent = "Form berhasil divalidasi."; 
+formFeedback.className = "form-feedback-success"; 
+contactForm.submit(); ";
 });
 contactForm.addEventListener("reset", () => {
  formFeedback.textContent = "";
