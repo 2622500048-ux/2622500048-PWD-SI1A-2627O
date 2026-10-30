@@ -3,3 +3,4 @@ http://localhost/2622500048%20-%20PWD%20-%20SI1A%20-%202627O/2622500048-PWD-SI1A
 Penggunaan Parameter GET menggunakan tanda ?nama=Andi dan ?nama=Budi Anduk
 Pengiriman formulir menggunakan GET
 Mengubah bagian action pada indexGet.php
+Mengubah method="get" menjadi method="post" pada index.php
