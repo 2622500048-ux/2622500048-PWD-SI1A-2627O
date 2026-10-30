@@ -4,3 +4,4 @@ Penggunaan Parameter GET menggunakan tanda ?nama=Andi dan ?nama=Budi Anduk
 Pengiriman formulir menggunakan GET
 Mengubah bagian action pada indexGet.php
 Mengubah method="get" menjadi method="post" pada index.php
+Menerima data formulir menggunakan $_POST
