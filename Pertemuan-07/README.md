@@ -6,3 +6,10 @@ Mengubah bagian action pada indexGet.php
 Mengubah method="get" menjadi method="post" pada index.php
 Menerima data formulir menggunakan $_POST
 Mengakses data dari berbagai jenis input formulir
+Memeriksa keberadaan dan kelengkapan data
+Memvalidasi format dan tipe data
+Memvalidasi nilai pilihan formulir
+Normalisasi dan Sanitasi data masukan
+Mengamankan keluaran HTML
+Menggunakan session untuk menyimpan data sementara
+Menerapkan pola PRG

@@ -1,9 +1,10 @@
 <?php 
 // P7: penggunaan GET 
 if (isset($_GET['nama'])) { 
-$nama = $_GET['nama']; 
-echo "Nama yang diterima: " . htmlspecialchars($nama, ENT_QUOTES, 'UTF-8'); 
+  $nama = $_GET['nama']; 
+  echo "Nama yang diterima: " . htmlspecialchars($nama, ENT_QUOTES, 'UTF-8'); 
 } 
+
 // P6: PHP dasar dan pemrograman sisi peladen 
 // Bagian 1: Variabel dan konstanta 
 $nim = "2622500048"; 
@@ -14,13 +15,16 @@ $semester = 2;
 $ipk = 3.75; 
 $statusAktif = true; 
 $catatanTambahan = null; 
+
 const NAMA_MATA_KULIAH = "Pemrograman Web Dasar"; 
-const PROFIL_GITHUB = "satpamal";
+const PROFIL_GITHUB = "satpamal"; 
+ 
 // Bagian 2: Operator 
 $batasSemester = 8; 
-$sisaSemester = $batasSemester - $semester;
+$sisaSemester = $batasSemester - $semester; 
 $semesterValid = $semester >= 1 && $semester <= $batasSemester; 
 $statusSemester = ($semesterValid && $statusAktif) ? "Sesuai rentang" : "Perlu diperiksa"; 
+ 
 // Bagian 3: Percabangan if-elseif-else 
 if ($semester < 3) { 
   $keteranganSemester = "Semester awal"; 
@@ -29,12 +33,14 @@ if ($semester < 3) {
 } else { 
   $keteranganSemester = "Semester akhir"; 
 } 
+ 
 $namaProdi = ($programStudi == "SI") ? "Sistem Informasi" : (($programStudi == "TI") ? "Teknik 
 Informatika" : "Lainnya"); 
+ 
 // Bagian 4: Percabangan switch-case-default 
 switch ($programStudi) { 
   case "SI": 
-        $fokusProgramStudi = "Sistem informasi dan proses bisnis"; 
+    $fokusProgramStudi = "Sistem informasi dan proses bisnis"; 
     break; 
   case "TI": 
     $fokusProgramStudi = "Komputasi dan pengembangan perangkat lunak"; 
@@ -43,52 +49,55 @@ switch ($programStudi) {
     $fokusProgramStudi = "Belum ditentukan"; 
 } 
 ?> 
-<!DOCTYPE html>
-<html lang="id">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profil Mahasiswa</title>
-    <link rel="stylesheet" href="style.css" />
-</head>
+<!doctype html> 
+<html lang="id"> 
+ 
+<head> 
+  <meta charset="UTF-8" /> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
+  <title>Profil Mahasiswa</title> 
+  <link rel="stylesheet" href="style.css" /> 
+</head> 
+ 
+<body> 
+  <header> 
+    <div class="header-top"> 
+      <h1>Profil Mahasiswa</h1> 
+ 
+      <button 
+Pemrograman Web Dasar (IS205) | Pertemuan 7 
+Modul P7 - PWD OBE 2026/2027 Gasal v2.0 | Halaman 21 | Yohanes Setiawan Japriadi 
+        class="nav-toggle" 
+        id="navToggle" 
+        type="button" 
+        aria-label="Buka navigasi" 
+        aria-controls="navMenu" 
+        aria-expanded="false"> 
+        &#9776; 
+      </button> 
+    </div> 
+ 
+    <nav> 
+      <ul id="navMenu"> 
+        <li><a href="#home">Beranda</a></li> 
+        <li><a href="#about">Tentang</a></li> 
+        <li><a href="#contact">Kontak</a></li> 
+      </ul> 
+    </nav> 
+  </header> 
+ 
+  <main> 
+    <section id="home"> 
+      <h2>Selamat Datang</h2> 
+      <p>Halo, saya <strong><?php echo $namaMahasiswa; ?></strong>. Saya sedang mempelajari 
+matakuliah <strong><?php print NAMA_MATA_KULIAH; ?></strong> pada tahun akademik <?php echo 
+$tahunAkademik; ?>.</p> 
 
-<body>
-    <header>
-        <div class="header-top">
-            <h1>Profil Mahasiswa</h1>
+       <img src="../fotoi.jpeg" alt="Foto profil Risva Auvira" width="150">
+      </section>
 
-            <button
-               class="nav-toggle"
-               id="navToggle"
-               type="button"
-               aria-label="Buka navigasi"
-               aria-controls="navMenu"
-               aria-expanded="false"
-               >
-                 &#9776;
-            </button>
-        </div>
-
-        <nav>
-            <ul id="navMenu">
-                <li><a href="#home">Beranda</a></li>
-                <li><a href="#about">Tentang</a></li>
-                <li><a href="#contact">Kontak</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <main>
-        <section id="home">
-            <h2>Selamat Datang</h2>
-            <p>Halo, saya <strong><?php echo $namaMahasiswa; ?></strong>. Saya sedang mempelajari matakuliah 
-<strong><?php echo NAMA_MATA_KULIAH; ?></strong> pada tahun akademik <?php echo $tahunAkademik; 
-?>.</p> 
-            <img src="../fotoi.jpeg" alt="Foto profil Risva Auvira" width="150">
-            </section>
-
-            <section id="about">
-                <h2>Tentang Saya</h2>
+      <section id="about">
+        <h2>Tentang Saya</h2>
             <article>
                 <h3>Profil Singkat</h3>
                 <p>Program Studi: <?php echo $namaProdi . " (" . $programStudi . ")"; ?></p> 
@@ -239,9 +248,10 @@ switch ($programStudi) {
         </section>
     </main>
 
-    <footer>
-       <p>&copy; <?= date("Y") ?> <?php echo $namaMahasiswa; ?> [<?= $nim ?>]</p> 
-    </footer>
-    <script src="script.js"></script>
-</body>
+     <footer> 
+    <p>&copy; <?= date("Y") ?> <?php echo $namaMahasiswa; ?> [<?= $nim ?>]</p> 
+  </footer> 
+  <script src="script.js"></script> 
+</body> 
+ 
 </html> 
