@@ -5,3 +5,4 @@ Pengiriman formulir menggunakan GET
 Mengubah bagian action pada indexGet.php
 Mengubah method="get" menjadi method="post" pada index.php
 Menerima data formulir menggunakan $_POST
+Mengakses data dari berbagai jenis input formulir
