@@ -2,7 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@400;500;600&display=swap');
 
 
-/* PENGATURAN DASAR */
+/* =========================
+   PENGATURAN DASAR
+========================= */
+
 * {
     margin: 0;
     padding: 0;
@@ -16,7 +19,10 @@ body {
 }
 
 
-/* HEADER: JUDUL DI BAGIAN ATAS */
+/* =========================
+   HEADER
+========================= */
+
 .header {
     background-color: #754b43;
     color: white;
@@ -37,7 +43,10 @@ body {
 }
 
 
-/* LAYOUT: NAVIGASI KIRI DAN KONTEN KANAN */
+/* =========================
+   LAYOUT HOME
+========================= */
+
 .layout {
     display: flex;
     align-items: stretch;
@@ -45,7 +54,10 @@ body {
 }
 
 
-/* NAVIGASI DI SEBELAH KIRI */
+/* =========================
+   NAVIGASI HOME
+========================= */
+
 .navigasi {
     width: 220px;
     flex-shrink: 0;
@@ -76,7 +88,10 @@ body {
 }
 
 
-/* KONTEN DI SEBELAH KANAN */
+/* =========================
+   KONTEN HOME
+========================= */
+
 .konten {
     flex: 1;
     min-width: 0;
@@ -99,7 +114,24 @@ body {
 }
 
 
-/* FOOTER DI BAGIAN BAWAH */
+/* =========================
+   GAMBAR HOME
+========================= */
+
+.gambar-home {
+    display: block;
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    margin: 25px auto;
+    border-radius: 12px;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
 .footer {
     background-color: #754b43;
     color: white;
@@ -109,8 +141,12 @@ body {
 }
 
 
-/* RESPONSIVE UNTUK LAYAR KECIL */
+/* =========================
+   RESPONSIVE HOME
+========================= */
+
 @media (max-width: 768px) {
+
     .layout {
         flex-direction: column;
     }
@@ -140,11 +176,264 @@ body {
     }
 }
 
-.gambar-home {
+
+/* =========================
+   HALAMAN PROFILE
+========================= */
+
+.profile-layout {
+    display: flex;
+    gap: 25px;
+    padding: 30px;
+    align-items: flex-start;
+}
+
+
+/* =========================
+   NAVIGASI PROFILE
+========================= */
+
+.profile-nav {
+    width: 220px;
+    flex-shrink: 0;
+    background-color: #5c4033;
+    padding: 20px;
+    border-radius: 12px;
+    color: #fff8ef;
+}
+
+.profile-nav h3 {
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.profile-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.profile-nav li {
+    margin-bottom: 12px;
+}
+
+.profile-nav a {
+    display: block;
+    color: #fff8ef;
+    text-decoration: none;
+    padding: 10px 12px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.profile-nav a:hover,
+.profile-nav a.active {
+    background-color: #d8a47f;
+    color: #3b251b;
+}
+
+
+/* =========================
+   KONTEN PROFILE
+========================= */
+
+.profile-content {
+    flex: 1;
+    min-width: 0;
+}
+
+
+/* =========================
+   BIODATA DIRI
+========================= */
+
+.biodata-card {
+    display: grid;
+    grid-template-columns: 250px minmax(0, 1fr);
+    gap: 25px;
+    background-color: #fffaf3;
+    padding: 25px;
+    border-radius: 12px;
+    align-items: stretch;
+}
+
+
+/* =========================
+   KOLOM FOTO DAN IDENTITAS
+========================= */
+
+.biodata-photo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px 15px;
+    background-color: #f3e5d8;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.biodata-photo h2 {
+    font-family: 'Playfair Display', serif;
+    color: #5c4033;
+    margin: 0 0 8px;
+}
+
+.biodata-photo p {
+    color: #8b6248;
+    margin: 0 0 20px;
+    line-height: 1.6;
+}
+
+
+/* FOTO PROFIL */
+
+.biodata-photo img {
+    display: block;
+    width: 100%;
+    height: 350px;
+    flex: none;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 10px;
+    border: 4px solid #fffaf3;
+}
+
+
+/* =========================
+   DETAIL BIODATA
+========================= */
+
+.biodata-details {
+    min-width: 0;
+}
+
+.biodata-details h2 {
+    font-family: 'Playfair Display', serif;
+    color: #5c4033;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.biodata-item {
+    display: grid;
+    grid-template-columns: 180px minmax(0, 1fr);
+    gap: 15px;
+    padding: 12px 0;
+    border-bottom: 1px solid #ead8c8;
+}
+
+.biodata-item span {
+    font-weight: 600;
+    color: #8b6248;
+}
+
+.biodata-item p {
+    margin: 0;
+    color: #4b382d;
+    line-height: 1.6;
+    overflow-wrap: break-word;
+}
+
+
+/* =========================
+   ABOUT ME
+========================= */
+
+.profile-intro {
+    background-color: #fffaf3;
+    padding: 25px;
+    border-radius: 12px;
+    margin-top: 25px;
+    border-left: 5px solid #b87950;
+}
+
+.profile-intro h2 {
+    font-family: 'Playfair Display', serif;
+    color: #5c4033;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.profile-intro p {
+    line-height: 1.8;
+    text-align: justify;
+    color: #5b4a42;
+}
+
+
+/* =========================
+   VIDEO PROFILE
+========================= */
+
+.profile-video {
+    background-color: #fffaf3;
+    padding: 25px;
+    margin-top: 25px;
+    border-radius: 12px;
+}
+
+.profile-video h2 {
+    font-family: 'Playfair Display', serif;
+    color: #5c4033;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.profile-video p {
+    color: #5b4a42;
+    line-height: 1.6;
+}
+
+.profile-video video {
     display: block;
     width: 100%;
     max-width: 600px;
-    height: auto;
-    margin: 25px auto;
+    margin: 20px auto 0;
     border-radius: 12px;
+}
+
+
+/* =========================
+   RESPONSIVE PROFILE
+========================= */
+
+@media screen and (max-width: 768px) {
+
+    .profile-layout {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .profile-nav {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .profile-nav ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .biodata-card {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 15px;
+    }
+
+    .biodata-photo img {
+        width: 100%;
+        height: 300px;
+        flex: none;
+    }
+
+    .biodata-item {
+        grid-template-columns: 1fr;
+        gap: 5px;
+    }
+
+    .profile-intro,
+    .profile-video {
+        padding: 20px;
+    }
 }
