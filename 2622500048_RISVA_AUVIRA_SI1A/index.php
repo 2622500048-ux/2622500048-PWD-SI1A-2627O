@@ -33,6 +33,7 @@
             </p>
 
             <!-- Gambar usaha bisa ditambahkan di sini -->
+             <img src="img/pastry.jpeg" alt="Pilihan pastry Risva's Patisserie" class="gambar-home">
         </main>
 
     </div>
