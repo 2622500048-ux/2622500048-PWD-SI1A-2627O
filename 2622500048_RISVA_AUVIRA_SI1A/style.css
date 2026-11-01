@@ -1,0 +1,141 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@400;500;600&display=swap');
+
+
+/* PENGATURAN DASAR */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #fff8f3;
+    color: #4b3028;
+}
+
+
+/* HEADER: JUDUL DI BAGIAN ATAS */
+.header {
+    background-color: #754b43;
+    color: white;
+    text-align: center;
+    padding: 35px 20px;
+}
+
+.header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.header p {
+    font-size: 15px;
+    font-weight: 400;
+}
+
+
+/* LAYOUT: NAVIGASI KIRI DAN KONTEN KANAN */
+.layout {
+    display: flex;
+    align-items: stretch;
+    min-height: 500px;
+}
+
+
+/* NAVIGASI DI SEBELAH KIRI */
+.navigasi {
+    width: 220px;
+    flex-shrink: 0;
+    background-color: #a77b6f;
+    padding: 25px 15px;
+}
+
+.navigasi ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.navigasi a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 12px 15px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.navigasi a:hover {
+    background-color: #754b43;
+}
+
+
+/* KONTEN DI SEBELAH KANAN */
+.konten {
+    flex: 1;
+    min-width: 0;
+    padding: 35px;
+    background-color: #fffaf6;
+}
+
+.konten h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #754b43;
+}
+
+.konten p {
+    font-size: 15px;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+
+/* FOOTER DI BAGIAN BAWAH */
+.footer {
+    background-color: #754b43;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 13px;
+}
+
+
+/* RESPONSIVE UNTUK LAYAR KECIL */
+@media (max-width: 768px) {
+    .layout {
+        flex-direction: column;
+    }
+
+    .navigasi {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .navigasi ul {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .konten {
+        padding: 25px 20px;
+    }
+
+    .header h1 {
+        font-size: 28px;
+    }
+
+    .konten h2 {
+        font-size: 24px;
+    }
+}
