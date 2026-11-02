@@ -1,10 +1,14 @@
-/* Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@400;500;600&display=swap');
+/* ==================================================
+   GOOGLE FONTS
+   Elegant English Bakery
+================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Poppins:wght@400;500;600&display=swap');
 
 
-/* =========================
+/* ==================================================
    PENGATURAN DASAR
-========================= */
+================================================== */
 
 * {
     margin: 0;
@@ -16,36 +20,71 @@ body {
     font-family: 'Poppins', sans-serif;
     background-color: #fff8f3;
     color: #4b3028;
+    line-height: 1.7;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Playfair Display', serif;
+    color: #754b43;
+}
+
+p {
+    line-height: 1.8;
+}
+
+img {
+    max-width: 100%;
 }
 
 
-/* =========================
+/* ==================================================
    HEADER
-========================= */
+================================================== */
 
 .header {
     background-color: #754b43;
     color: white;
     text-align: center;
-    padding: 35px 20px;
+    padding: 30px 20px;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.brand img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
 }
 
 .header h1 {
-    font-family: 'Playfair Display', serif;
-    font-size: 36px;
-    font-weight: 700;
-    margin-bottom: 10px;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 48px;
+    font-weight: 600;
+    font-style: italic;
+    letter-spacing: 1px;
+    color: #f5dde3;
+    margin-bottom: 5px;
 }
 
 .header p {
-    font-size: 15px;
-    font-weight: 400;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 20px;
+    font-style: italic;
+    letter-spacing: 1px;
+    color: #fff8f3;
 }
 
 
-/* =========================
+/* ==================================================
    LAYOUT HOME
-========================= */
+================================================== */
 
 .layout {
     display: flex;
@@ -54,9 +93,9 @@ body {
 }
 
 
-/* =========================
-   NAVIGASI HOME
-========================= */
+/* ==================================================
+   NAVIGASI
+================================================== */
 
 .navigasi {
     width: 220px;
@@ -80,17 +119,19 @@ body {
     font-weight: 500;
     padding: 12px 15px;
     border-radius: 8px;
-    transition: background-color 0.3s ease;
+    transition: all 0.3s ease;
 }
 
-.navigasi a:hover {
+.navigasi a:hover,
+.navigasi a.active {
     background-color: #754b43;
+    transform: translateX(3px);
 }
 
 
-/* =========================
+/* ==================================================
    KONTEN HOME
-========================= */
+================================================== */
 
 .konten {
     flex: 1;
@@ -100,11 +141,13 @@ body {
 }
 
 .konten h2 {
-    font-family: 'Playfair Display', serif;
-    font-size: 28px;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 36px;
     font-weight: 600;
-    margin-bottom: 20px;
+    font-style: italic;
+    letter-spacing: 0.5px;
     color: #754b43;
+    margin-bottom: 20px;
 }
 
 .konten p {
@@ -114,72 +157,233 @@ body {
 }
 
 
-/* =========================
+/* ==================================================
    GAMBAR HOME
-========================= */
+================================================== */
 
 .gambar-home {
     display: block;
     width: 100%;
-    max-width: 600px;
-    height: auto;
+    max-width: 400px;
+    height: 280px;
+    object-fit: cover;
     margin: 25px auto;
-    border-radius: 12px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(75, 48, 40, 0.15);
 }
 
 
-/* =========================
-   FOOTER
-========================= */
+/* ==================================================
+   MENU FAVORIT
+================================================== */
 
-.footer {
+.menu-favorit {
+    width: 100%;
+    margin: 30px 0;
+    padding: 25px;
+    text-align: center;
+}
+
+.menu-favorit h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 38px;
+    font-weight: 600;
+    font-style: italic;
+    color: #754b43;
+    margin-bottom: 30px;
+}
+
+
+/* ==================================================
+   GRID PRODUK
+================================================== */
+
+.daftar-produk {
+    display: grid;
+    grid-template-columns: repeat(2, 180px);
+    justify-content: center;
+    gap: 25px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+/* ==================================================
+   KARTU PRODUK
+================================================== */
+
+.produk-card {
+    width: 180px;
+    box-sizing: border-box;
+    padding: 12px;
+    background-color: #fffaf5;
+    border: 1px solid #f0e2d7;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(75, 48, 40, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.produk-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 22px rgba(75, 48, 40, 0.15);
+}
+
+.produk-card img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.produk-card h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 21px;
+    font-weight: 600;
+    font-style: italic;
+    color: #754b43;
+    margin: 12px 0 8px;
+}
+
+.produk-card p {
+    color: #6b625c;
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.produk-card .harga {
+    color: #8b4b2b;
+    font-weight: 600;
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+
+/* ==================================================
+   DAFTAR MENU DAN TABEL HARGA
+================================================== */
+
+.daftar-menu {
+    display: block;
+    clear: both;
+    width: 100%;
+    margin: 30px 0;
+    padding: 25px;
+    position: static;
+}
+
+.daftar-menu h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 36px;
+    font-style: italic;
+    color: #754b43;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+th,
+td {
+    border: 1px solid #ead8c8;
+    padding: 12px;
+    text-align: center;
+}
+
+th {
     background-color: #754b43;
     color: white;
+    font-weight: 500;
+}
+
+td {
+    background-color: #fff4e6;
+    color: #4b3028;
+}
+
+tbody tr:hover td {
+    background-color: #fce4ec;
+}
+
+
+/* ==================================================
+   INFORMASI TOKO
+================================================== */
+
+.info-toko {
+    background-color: #fce4ec;
+    padding: 40px 20px;
     text-align: center;
+    border-radius: 18px;
+    margin-top: 30px;
+}
+
+.info-toko h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 38px;
+    font-style: italic;
+    color: #754b43;
+    margin-bottom: 15px;
+}
+
+.info-toko > p {
+    color: #795548;
+    margin-bottom: 20px;
+}
+
+.detail-toko {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 15px;
+    background-color: #fff8f0;
     padding: 20px;
-    font-size: 13px;
+    border-radius: 12px;
+    margin: 15px auto;
+    max-width: 500px;
+    text-align: left;
+    box-shadow: 0 4px 12px rgba(75, 48, 40, 0.06);
+    transition: transform 0.3s ease;
+}
+
+.detail-toko:hover {
+    transform: translateY(-3px);
+}
+
+.ikon-toko {
+    font-size: 28px;
+    color: #a77b6f;
+    width: 35px;
+    text-align: center;
+    flex-shrink: 0;
+}
+
+.detail-toko h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 23px;
+    font-style: italic;
+    color: #754b43;
+    margin-bottom: 5px;
+}
+
+.detail-toko p {
+    color: #6b625c;
+    margin: 2px 0;
+    font-size: 14px;
 }
 
 
-/* =========================
-   RESPONSIVE HOME
-========================= */
-
-@media (max-width: 768px) {
-
-    .layout {
-        flex-direction: column;
-    }
-
-    .navigasi {
-        width: 100%;
-        padding: 15px;
-    }
-
-    .navigasi ul {
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 10px;
-    }
-
-    .konten {
-        padding: 25px 20px;
-    }
-
-    .header h1 {
-        font-size: 28px;
-    }
-
-    .konten h2 {
-        font-size: 24px;
-    }
-}
-
-
-/* =========================
+/* ==================================================
    HALAMAN PROFILE
-========================= */
+================================================== */
 
 .profile-layout {
     display: flex;
@@ -188,64 +392,48 @@ body {
     align-items: flex-start;
 }
 
+/* Navigasi Profile */
 
-/* =========================
-   NAVIGASI PROFILE
-========================= */
-
-.profile-nav {
-    width: 220px;
-    flex-shrink: 0;
-    background-color: #5c4033;
-    padding: 20px;
-    border-radius: 12px;
-    color: #fff8ef;
+.profile-layout > .navigasi {
+    flex: 0 0 260px;
+    width: 260px;
+    min-width: 260px;
+    align-self: stretch;
+    box-sizing: border-box;
+    background-color: #a77b6f;
+    padding: 25px 15px;
 }
 
-.profile-nav h3 {
-    margin-top: 0;
-    margin-bottom: 20px;
-}
-
-.profile-nav ul {
+.profile-layout > .navigasi ul {
+    display: flex;
+    flex-direction: column;
     list-style: none;
-    padding: 0;
-    margin: 0;
+    gap: 15px;
 }
 
-.profile-nav li {
-    margin-bottom: 12px;
+.profile-layout > .navigasi li {
+    width: 100%;
 }
 
-.profile-nav a {
+.profile-layout > .navigasi a {
     display: block;
-    color: #fff8ef;
+    width: 100%;
+    box-sizing: border-box;
+    color: white;
     text-decoration: none;
-    padding: 10px 12px;
+    padding: 12px 15px;
     border-radius: 8px;
-    transition: 0.3s;
 }
 
-.profile-nav a:hover,
-.profile-nav a.active {
-    background-color: #d8a47f;
-    color: #3b251b;
-}
-
-
-/* =========================
-   KONTEN PROFILE
-========================= */
-
-.profile-content {
-    flex: 1;
-    min-width: 0;
+.profile-layout > .navigasi a:hover,
+.profile-layout > .navigasi a.active {
+    background-color: #754b43;
 }
 
 
-/* =========================
+/* ==================================================
    BIODATA DIRI
-========================= */
+================================================== */
 
 .biodata-card {
     display: grid;
@@ -253,14 +441,15 @@ body {
     gap: 25px;
     background-color: #fffaf3;
     padding: 25px;
-    border-radius: 12px;
+    border-radius: 15px;
     align-items: stretch;
+    box-shadow: 0 5px 18px rgba(75, 48, 40, 0.06);
 }
 
 
-/* =========================
-   KOLOM FOTO DAN IDENTITAS
-========================= */
+/* ==================================================
+   FOTO DAN IDENTITAS
+================================================== */
 
 .biodata-photo {
     display: flex;
@@ -274,7 +463,9 @@ body {
 }
 
 .biodata-photo h2 {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 30px;
+    font-style: italic;
     color: #5c4033;
     margin: 0 0 8px;
 }
@@ -284,9 +475,6 @@ body {
     margin: 0 0 20px;
     line-height: 1.6;
 }
-
-
-/* FOTO PROFIL */
 
 .biodata-photo img {
     display: block;
@@ -300,16 +488,18 @@ body {
 }
 
 
-/* =========================
+/* ==================================================
    DETAIL BIODATA
-========================= */
+================================================== */
 
 .biodata-details {
     min-width: 0;
 }
 
 .biodata-details h2 {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 34px;
+    font-style: italic;
     color: #5c4033;
     margin-top: 0;
     margin-bottom: 20px;
@@ -336,9 +526,9 @@ body {
 }
 
 
-/* =========================
+/* ==================================================
    ABOUT ME
-========================= */
+================================================== */
 
 .profile-intro {
     background-color: #fffaf3;
@@ -346,10 +536,13 @@ body {
     border-radius: 12px;
     margin-top: 25px;
     border-left: 5px solid #b87950;
+    box-shadow: 0 5px 15px rgba(75, 48, 40, 0.05);
 }
 
 .profile-intro h2 {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 34px;
+    font-style: italic;
     color: #5c4033;
     margin-top: 0;
     margin-bottom: 15px;
@@ -362,19 +555,22 @@ body {
 }
 
 
-/* =========================
+/* ==================================================
    VIDEO PROFILE
-========================= */
+================================================== */
 
 .profile-video {
     background-color: #fffaf3;
     padding: 25px;
     margin-top: 25px;
     border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(75, 48, 40, 0.05);
 }
 
 .profile-video h2 {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 34px;
+    font-style: italic;
     color: #5c4033;
     margin-top: 0;
     margin-bottom: 15px;
@@ -394,218 +590,26 @@ body {
 }
 
 
-/* =========================
-   RESPONSIVE PROFILE
-========================= */
-
-@media screen and (max-width: 768px) {
-
-    .profile-layout {
-        flex-direction: column;
-        padding: 15px;
-    }
-
-    .profile-nav {
-        width: 100%;
-        box-sizing: border-box;
-    }
-
-    .profile-nav ul {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .biodata-card {
-        grid-template-columns: 1fr;
-        gap: 20px;
-        padding: 15px;
-    }
-
-    .biodata-photo img {
-        width: 100%;
-        height: 300px;
-        flex: none;
-    }
-
-    .biodata-item {
-        grid-template-columns: 1fr;
-        gap: 5px;
-    }
-
-    .profile-intro,
-    .profile-video {
-        padding: 20px;
-    }
-}
-
-.menu-favorit,
-.daftar-menu {
-    display: block;
-    clear: both;
-    width: 100%;
-    margin: 30px 0;
-    padding: 25px;
-    position: static;
-}
-
-.menu-favorit h2,
-.daftar-menu h2 {
-    font-family: 'Playfair Display', serif;
-    color: #754b43;
-    margin-bottom: 20px;
-}
-
-/* FONT WEBSITE */
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Poppins:wght@400;500;600&display=swap');
-
-body {
-    font-family: 'Poppins', sans-serif;
-}
-
-h1, h2, h3 {
-    font-family: 'Playfair Display', serif;
-}
-
-/* MENU FAVORIT */
-.menu-favorit {
-    width: 100%;
-    margin-top: 30px;
-    text-align: center;
-}
-
-.menu-favorit h2 {
-    text-align: center;
-    color: #6b3e26;
-    margin-bottom: 30px;
-}
-
-/* GRID PRODUK 2 ATAS 2 BAWAH */
-.daftar-produk {
-    display: grid;
-    grid-template-columns: repeat(2, 180px);
-    justify-content: center;
-    gap: 25px;
-
-    width: 100%;
-    margin: 0 auto;
-}
-
-/* KARTU PRODUK */
-.produk-card {
-    width: 180px;
-    box-sizing: border-box;
-    padding: 12px;
-    background-color: #fffaf5;
-    border-radius: 12px;
-    text-align: center;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
-}
-
-/* FOTO PRODUK */
-.produk-card img {
-    width: 100%;
-    aspect-ratio: 1 / 1;
-    object-fit: cover;
-    display: block;
-    border-radius: 8px;
-}
-
-/* NAMA PRODUK */
-.produk-card h3 {
-    color: #6b3e26;
-    font-size: 16px;
-    margin: 12px 0 8px;
-}
-
-/* DESKRIPSI */
-.produk-card p {
-    color: #6b625c;
-    font-size: 13px;
-    line-height: 1.5;
-}
-
-/* HARGA */
-.produk-card .harga {
-    color: #8b4b2b;
-    font-weight: 600;
-    font-size: 15px;
-}
-
-/* RESPONSIVE HP */
-@media (max-width: 420px) {
-    .daftar-produk {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-        gap: 12px;
-        padding: 0 12px;
-        box-sizing: border-box;
-    }
-
-    .produk-card {
-        width: 100%;
-    }
-}
-
-table {
-    width: 80%;
-    margin: 20px auto;
-    border-collapse: collapse;
-}
-
-th, td {
-    border: 1px solid #8b5e3c;
-    padding: 12px;
-    text-align: center;
-}
-
-th {
-    background-color: #8b5e3c;
-    color: white;
-}
-
-td {
-    background-color: #fff4e6;
-}
-
-.banner-promo {
-    width: 70%;
-    margin: 40px auto;
-    text-align: center;
-}
-
-.banner-promo img {
-    width: 100%;
-    height: auto;
-    border-radius: 15px;
-    display: block;
-}
-
-.info-toko {
-    background-color: #fce4ec;
-    padding: 40px 20px;
-    text-align: center;
-    border-radius: 15px;
-    margin-top: 30px;
-}
-
-.detail-toko {
-    background-color: #fff8f0;
-    padding: 15px;
-    border-radius: 12px;
-    margin: 15px auto;
-    max-width: 500px;
-}
+/* ==================================================
+   FORM REGISTRASI
+================================================== */
 
 .registrasi {
-    background-color: #FCE4EC;
+    background-color: #fce4ec;
     padding: 30px;
     border-radius: 15px;
     max-width: 500px;
     margin: 30px auto;
+    box-shadow: 0 8px 25px rgba(75, 48, 40, 0.10);
 }
 
 .registrasi h2 {
-    color: #C76B85;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 36px;
+    font-style: italic;
+    color: #754b43;
     text-align: center;
+    margin-bottom: 5px;
 }
 
 .registrasi p {
@@ -617,25 +621,342 @@ td {
     display: block;
     margin-top: 15px;
     color: #795548;
-    font-weight: bold;
+    font-weight: 500;
+    font-size: 14px;
 }
 
 .registrasi input {
     width: 100%;
     padding: 12px;
     margin-top: 7px;
-    border: 1px solid #E5B8C7;
+    border: 1px solid #e5b8c7;
     border-radius: 8px;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    background-color: #fffaf6;
+    color: #4b3028;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.registrasi input:focus {
+    outline: none;
+    border-color: #a77b6f;
+    box-shadow: 0 0 0 3px rgba(167, 123, 111, 0.15);
 }
 
 .registrasi button {
     width: 100%;
-    padding: 12px;
+    padding: 13px;
     margin-top: 20px;
-    background-color: #C76B85;
+    background-color: #c76b85;
     color: white;
     border: none;
     border-radius: 8px;
     cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+}
+
+.registrasi button:hover {
+    background-color: #754b43;
+    transform: translateY(-2px);
+}
+
+
+/* ==================================================
+   FOOTER
+================================================== */
+
+.footer {
+    background-color: #754b43;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 13px;
+}
+
+.footer p {
+    margin: 0;
+    line-height: 1.6;
+}
+
+
+/* ==================================================
+   RESPONSIVE TABLET
+================================================== */
+
+@media (max-width: 768px) {
+
+    /* Home */
+
+    .layout {
+        flex-direction: column;
+    }
+
+    .navigasi {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .navigasi ul {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .navigasi a:hover,
+    .navigasi a.active {
+        transform: none;
+    }
+
+    .konten {
+        padding: 25px 20px;
+    }
+
+    .header h1 {
+        font-size: 36px;
+    }
+
+    .konten h2 {
+        font-size: 30px;
+    }
+
+    .gambar-home {
+        max-width: 350px;
+        height: 250px;
+    }
+
+    /* Profile */
+
+    .profile-layout {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .profile-layout > .navigasi {
+        flex: 0 0 auto;
+        width: 100%;
+        min-width: 0;
+    }
+
+    .profile-layout > .navigasi ul {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .biodata-card {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 15px;
+    }
+
+    .biodata-photo img {
+        width: 100%;
+        max-width: 350px;
+        height: 300px;
+    }
+
+    .biodata-item {
+        grid-template-columns: 1fr;
+        gap: 5px;
+    }
+
+    .profile-intro,
+    .profile-video {
+        padding: 20px;
+    }
+
+    /* Tabel */
+
+    table {
+        width: 100%;
+    }
+}
+
+
+/* ==================================================
+   RESPONSIVE HP
+================================================== */
+
+@media (max-width: 480px) {
+
+    .header {
+        padding: 25px 15px;
+    }
+
+    .brand {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .brand img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .header h1 {
+        font-size: 30px;
+    }
+
+    .header p {
+        font-size: 17px;
+    }
+
+    .konten {
+        padding: 20px 15px;
+    }
+
+    .konten h2 {
+        font-size: 27px;
+    }
+
+    .gambar-home {
+        max-width: 100%;
+        height: 220px;
+    }
+
+    /* Produk */
+
+    .menu-favorit,
+    .daftar-menu {
+        padding: 15px;
+    }
+
+    .menu-favorit h2,
+    .daftar-menu h2 {
+        font-size: 30px;
+    }
+
+    .daftar-produk {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px;
+        padding: 0 5px;
+        box-sizing: border-box;
+    }
+
+    .produk-card {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .produk-card h3 {
+        font-size: 18px;
+    }
+
+    .produk-card p {
+        font-size: 12px;
+    }
+
+    /* Informasi toko */
+
+    .info-toko {
+        padding: 25px 15px;
+    }
+
+    .info-toko h2 {
+        font-size: 30px;
+    }
+
+    .detail-toko {
+        padding: 15px;
+        gap: 10px;
+    }
+
+    .ikon-toko {
+        font-size: 24px;
+        width: 30px;
+    }
+
+    /* Profile */
+
+    .profile-layout {
+        padding: 10px;
+        gap: 15px;
+    }
+
+    .biodata-card {
+        padding: 12px;
+    }
+
+    .biodata-photo img {
+        height: 280px;
+    }
+
+    /* Registrasi */
+
+    .registrasi {
+        padding: 20px;
+        margin: 20px 10px;
+    }
+
+    .registrasi h2 {
+        font-size: 30px;
+    }
+
+    /* Tabel */
+
+    th,
+    td {
+        padding: 8px 5px;
+        font-size: 12px;
+    }
+
+    /* Footer */
+
+    .footer {
+        padding: 15px 10px;
+        font-size: 11px;
+    }
+}
+
+/* VIDEO HOME */
+.video-home {
+    background-color: #f8e9e2;
+    padding: 25px 15px;
+    margin: 25px auto;
+    border-radius: 18px;
+    text-align: center;
+    max-width: 300px;
+}
+
+.video-home h2 {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    color: #754b43;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.video-caption {
+    font-family: 'Poppins', sans-serif;
+    font-style: italic;
+    color: #8b6b60;
+    margin-bottom: 20px;
+}
+
+/* UKURAN VIDEO */
+.video-home video {
+    width: 100%;
+    aspect-ratio: 9 / 16;
+    object-fit: cover;
+    display: block;
+    border-radius: 12px;
+}
+
+/* RESPONSIVE VIDEO */
+@media (max-width: 300px) {
+    .video-home {
+        padding: 20px 12px;
+        margin: 20px 10px;
+    }
+
+    .video-home h2 {
+        font-size: 23px;
+    }
 }

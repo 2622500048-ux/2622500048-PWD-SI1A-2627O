@@ -12,22 +12,15 @@
 <body>
 
     <header class="header">
+        <div class="brand">
+            <img src="img/logo usaha.jpeg" alt="Logo Risva's Patisserie">
+                <div class="header-text">
+
         <h1>Risva's Patisserie</h1>
-        <p>Sweet moments, made with love</p>
+        <p>Bake Happiness in Every Bite</p>
+</div>
+</div>
     </header>
-
-    <div class="profile-layout">
-
-        <!-- Navigasi -->
-        <nav class="profile-nav">
-            <h3>Menu</h3>
-
-            <ul>
-                <li><a href="index.php">Home</a></li>
-                <li><a href="profile.php" class="active">Profile</a></li>
-                <li><a href="index.php#contact">Contact</a></li>
-            </ul>
-        </nav>
 
         <!-- Konten Profil -->
         <main class="profile-content">
@@ -131,8 +124,7 @@
     </div>
 
     <footer class="footer">
-        <p>&copy; 2026 Risva's Patisserie. All Rights Reserved.</p>
-    </footer>
-
+    <p>©2622500048_Risva Auvira_SI1A_ UTS Pemrograman Web Dasar.</p>
+</footer>
 </body>
 </html>
