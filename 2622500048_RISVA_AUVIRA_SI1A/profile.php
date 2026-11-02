@@ -115,16 +115,10 @@
                 </p>
             </section>
 
-<!-- Video Profile -->
+           <!-- Video Profile -->
 <section class="profile-video">
-    <h2>My Video</h2>
-    <p>Video singkat tentang saya.</p>
-
-    <video controls>
-        <source src="video/video-profile.mp4" type="video/mp4">
-        Browser Anda tidak mendukung video.
-    </video>
-</section>
+    <h2>Video Profile</h2>
+    <p>Juara 1 Lomba Tari Festival Kepemudaan 2026 Dinas Provinsi Kep.Babel</p>
 
     <video controls>
         <source src="video/video-profile.mp4" type="video/mp4">

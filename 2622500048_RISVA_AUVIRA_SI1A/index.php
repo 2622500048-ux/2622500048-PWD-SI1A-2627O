@@ -25,23 +25,51 @@
             </ul>
         </nav>
 
-        <main class="konten">
-            <h2>Selamat Datang di Risva's Patisserie</h2>
-            <p>
-                Risva's Patisserie menyediakan berbagai pilihan kue dan pastry
-                dengan cita rasa lezat untuk menemani setiap momen istimewa.
-            </p>
+       <main class="konten">
+    <h2>Selamat Datang di Risva's Patisserie</h2>
 
-            <!-- Gambar usaha bisa ditambahkan di sini -->
-             <img src="img/pastry.jpeg" alt="Pilihan pastry Risva's Patisserie" class="gambar-home">
-        </main>
+    <p>
+        Risva's Patisserie menyediakan berbagai pilihan kue dan pastry
+        dengan cita rasa lezat untuk menemani setiap momen istimewa.
+    </p>
+
+    <img src="img/pastry.jpeg"
+         alt="Pilihan pastry Risva's Patisserie"
+         class="gambar-home">
+
+    <section class="menu-favorit">
+    <h2>Menu Favorit</h2>
+
+    <div class="daftar-produk">
+
+        <div class="produk-card">
+            <img src="img/croissant.jpg" alt="Butter Croissant">
+            <h3>Butter Croissant</h3>
+            <p>Pastry renyah dengan aroma butter yang harum</p>
+            <p class="harga">Rp18.000</p>
+        </div>
+
+        <div class="produk-card">
+            <img src="img/chocolate.jpg" alt="Chocolate Eclair">
+            <h3>Chocolate Eclair</h3>
+            <p>Pastry lembut dengan lapisan krim cokelat</p>
+            <p class="harga">Rp20.000</p>
+        </div>
+
+        <div class="produk-card">
+            <img src="img/strawberry.jpg" alt="Strawberry Tart">
+            <h3>Strawberry Tart</h3>
+            <p>Tart renyah dengan topping strawberry segar</p>
+            <p class="harga">Rp22.000</p>
+        </div>
+
+        <div class="produk-card">
+            <img src="img/cinnamon.jpg" alt="Cinnamon Roll">
+            <h3>Cinnamon Roll</h3>
+            <p>Roti gulung lembut dengan aroma kayu manis dan lapisan gula manis</p>
+            <p class="harga">Rp17.000</p>
+        </div>
 
     </div>
+</section>
 
-    <!-- FOOTER: berada paling bawah -->
-    <footer class="footer">
-        <p>©2622500048_Risva Auvira_SI1A_ UTS Pemrograman Web Dasar</p>
-    </footer>
-
-</body>
-</html>

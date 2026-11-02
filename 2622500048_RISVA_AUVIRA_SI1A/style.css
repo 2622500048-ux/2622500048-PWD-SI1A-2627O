@@ -437,3 +437,205 @@ body {
         padding: 20px;
     }
 }
+
+.menu-favorit,
+.daftar-menu {
+    display: block;
+    clear: both;
+    width: 100%;
+    margin: 30px 0;
+    padding: 25px;
+    position: static;
+}
+
+.menu-favorit h2,
+.daftar-menu h2 {
+    font-family: 'Playfair Display', serif;
+    color: #754b43;
+    margin-bottom: 20px;
+}
+
+/* FONT WEBSITE */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Poppins:wght@400;500;600&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+}
+
+/* MENU FAVORIT */
+.menu-favorit {
+    width: 100%;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.menu-favorit h2 {
+    text-align: center;
+    color: #6b3e26;
+    margin-bottom: 30px;
+}
+
+/* GRID PRODUK 2 ATAS 2 BAWAH */
+.daftar-produk {
+    display: grid;
+    grid-template-columns: repeat(2, 180px);
+    justify-content: center;
+    gap: 25px;
+
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* KARTU PRODUK */
+.produk-card {
+    width: 180px;
+    box-sizing: border-box;
+    padding: 12px;
+    background-color: #fffaf5;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+/* FOTO PRODUK */
+.produk-card img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    display: block;
+    border-radius: 8px;
+}
+
+/* NAMA PRODUK */
+.produk-card h3 {
+    color: #6b3e26;
+    font-size: 16px;
+    margin: 12px 0 8px;
+}
+
+/* DESKRIPSI */
+.produk-card p {
+    color: #6b625c;
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+/* HARGA */
+.produk-card .harga {
+    color: #8b4b2b;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+/* RESPONSIVE HP */
+@media (max-width: 420px) {
+    .daftar-produk {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px;
+        padding: 0 12px;
+        box-sizing: border-box;
+    }
+
+    .produk-card {
+        width: 100%;
+    }
+}
+
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #8b5e3c;
+    padding: 12px;
+    text-align: center;
+}
+
+th {
+    background-color: #8b5e3c;
+    color: white;
+}
+
+td {
+    background-color: #fff4e6;
+}
+
+.banner-promo {
+    width: 70%;
+    margin: 40px auto;
+    text-align: center;
+}
+
+.banner-promo img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    display: block;
+}
+
+.info-toko {
+    background-color: #fce4ec;
+    padding: 40px 20px;
+    text-align: center;
+    border-radius: 15px;
+    margin-top: 30px;
+}
+
+.detail-toko {
+    background-color: #fff8f0;
+    padding: 15px;
+    border-radius: 12px;
+    margin: 15px auto;
+    max-width: 500px;
+}
+
+.registrasi {
+    background-color: #FCE4EC;
+    padding: 30px;
+    border-radius: 15px;
+    max-width: 500px;
+    margin: 30px auto;
+}
+
+.registrasi h2 {
+    color: #C76B85;
+    text-align: center;
+}
+
+.registrasi p {
+    text-align: center;
+    color: #795548;
+}
+
+.registrasi label {
+    display: block;
+    margin-top: 15px;
+    color: #795548;
+    font-weight: bold;
+}
+
+.registrasi input {
+    width: 100%;
+    padding: 12px;
+    margin-top: 7px;
+    border: 1px solid #E5B8C7;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+.registrasi button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 20px;
+    background-color: #C76B85;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
