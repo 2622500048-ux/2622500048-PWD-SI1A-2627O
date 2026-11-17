@@ -9,3 +9,4 @@ Membuat tabel dan mengisi dengan 9 kolom
 Memasukkan perintah DDL CREATE DATABASE dan CREATE TABLE
 Memeriksa struktur tabel
 Memasukkan data ke kontak melalui fasilitas INSERT
+Mempelajari perintah SQL insert
