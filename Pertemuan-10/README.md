@@ -10,3 +10,4 @@ Memasukkan perintah DDL CREATE DATABASE dan CREATE TABLE
 Memeriksa struktur tabel
 Memasukkan data ke kontak melalui fasilitas INSERT
 Mempelajari perintah SQL insert
+Memeriksa data menggunakan fasilitas Browse
