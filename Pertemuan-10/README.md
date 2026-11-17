@@ -14,3 +14,4 @@ Memeriksa data menggunakan fasilitas Browse
 Memeriksa kesesuaian data
 Menentukan pengaturan export yaitu metode QUICK dan format SQL
 Mengekspos basis data ke format SQL
+Memeriksa berkas hasil ekspor
