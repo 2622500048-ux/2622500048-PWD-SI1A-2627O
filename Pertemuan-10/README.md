@@ -11,3 +11,4 @@ Memeriksa struktur tabel
 Memasukkan data ke kontak melalui fasilitas INSERT
 Mempelajari perintah SQL insert
 Memeriksa data menggunakan fasilitas Browse
+Memeriksa kesesuaian data
