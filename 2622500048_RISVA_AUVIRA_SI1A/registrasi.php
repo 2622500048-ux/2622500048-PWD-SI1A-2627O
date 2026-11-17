@@ -1,3 +1,17 @@
+<?php
+session_start();
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+
+    $_SESSION['nama'] = $_POST['nama'];
+    $_SESSION['email'] = $_POST['email'];
+    $_SESSION['whatsapp'] = $_POST['whatsapp'];
+    $_SESSION['tgl_lahir'] = $_POST['tgl_lahir'];
+
+    $_SESSION['sudah_daftar'] = true;
+}
+?>
+
 <section class="registrasi">
     <h2>Registration Form</h2>
     <p>Silakan isi data diri Anda.</p>
@@ -54,7 +68,35 @@
 
     <button type="submit">Daftar</button>
 
+<p id="pesan"></p>
+
 </form>
+<?php if (isset($_SESSION['sudah_daftar'])): ?>
+
+    <div class="hasil-registrasi">
+
+        <h3>Terima Kasih Telah Mendaftar!</h3>
+        <p>Berikut data registrasi Anda:</p>
+
+        <p>Nama Lengkap:
+            <?= htmlspecialchars($_SESSION['nama']) ?>
+        </p>
+
+        <p>Email:
+            <?= htmlspecialchars($_SESSION['email']) ?>
+        </p>
+
+        <p>Nomor WhatsApp:
+            <?= htmlspecialchars($_SESSION['whatsapp']) ?>
+        </p>
+
+        <p>Tanggal Lahir:
+            <?= htmlspecialchars($_SESSION['tgl_lahir']) ?>
+        </p>
+
+    </div>
+
+<?php endif; ?>
 
 </section>
 
@@ -85,10 +127,7 @@ document.getElementById("formRegistrasi").addEventListener("submit", function(ev
         return;
     }
 
-    alert("Data registrasi sedang dikirim!");
-
 });
 </script>
-
 </body>
 </html>

@@ -5,7 +5,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Poppins:wght@400;500;600&display=swap');
 
-
 /* ==================================================
    PENGATURAN DASAR
 ================================================== */
@@ -959,4 +958,24 @@ tbody tr:hover td {
     .video-home h2 {
         font-size: 23px;
     }
+}
+
+/* Hasil Registrasi */
+
+.hasil-registrasi {
+    margin-top: 25px;
+    padding: 20px;
+    background-color: #fff0e8;
+    border: 1px solid #e5c5b5;
+    border-radius: 12px;
+}
+
+.hasil-registrasi h3 {
+    color: #754b43;
+    margin-bottom: 15px;
+}
+
+.hasil-registrasi p {
+    color: #5c4033;
+    margin-bottom: 10px;
 }
