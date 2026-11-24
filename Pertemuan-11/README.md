@@ -4,3 +4,4 @@ Memeriksa keseiapan basis data dan tabel kontak P11
 Membuat berkas koneksi PHP-MySQL P11
 Menentukan parameter koneksi basis data P11
 Mengatur pelaporan kesalahan MySQLi P11
+Mengimplementasikan koneksi php-MySQL menggunakan MySQLi
