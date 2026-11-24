@@ -1,1 +1,2 @@
 Menyalin artefak Pertemuan 10 ke Pertemuan 11
+Menyiapkan direktori dan lingkungan pengembangan pertemuan-11, lokasi direktori http://localhost/2622500048%20-%20PWD%20-%20SI1A%20-%202627O/2622500048-PWD-SI1A-2627O/Pertemuan-11/
