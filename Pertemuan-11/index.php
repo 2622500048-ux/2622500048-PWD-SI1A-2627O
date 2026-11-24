@@ -386,6 +386,30 @@ $pesan = $_SESSION['pesan'] ?? '';
               <p id="formFeedback"></p>
             </form>
 
+            <article id="hasilKontak" class="submission-result" aria-live="polite"> 
+<h3>Data Kontak dari Basis Data</h3> 
+<?php if (count($dataKontak) > 0): ?> 
+<!-- Perulangan foreach untuk menampilkan data kontak. --> 
+<?php foreach ($dataKontak as $data): ?> 
+<section> 
+<!-- Data kontak ditampilkan di sini. --> 
+<p><strong>ID:</strong> <?= bersihkan($data["id"]); ?></p> 
+<p><strong>Nama:</strong> <?= bersihkan($data["nama"]); ?></p> 
+<p><strong>Email:</strong> <?= bersihkan($data["email"]); ?></p> 
+<p><strong>Semester:</strong> <?= bersihkan($data["semester"]); ?></p> 
+<p><strong>Tanggal Kunjungan:</strong> <?= bersihkan($data["tanggal"]); ?></p> 
+<p><strong>Jenis Pesan:</strong> <?= bersihkan($data["jenis_pesan"]); ?></p> 
+<p><strong>Topik yang Diminati:</strong> <?= bersihkan($data["minat"]); ?></p> 
+<p><strong>Program Studi:</strong> <?= bersihkan($data["prodi"]); ?></p> 
+<p><strong>Pesan:</strong> <?= nl2br(bersihkan($data["pesan"])); ?></p> 
+</section> 
+<?php endforeach; ?> 
+<?php else: ?> 
+<p>Belum ada data kontak yang tersimpan.</p> 
+<?php endif; ?> 
+</section> 
+<?php if (isset($_SESSION["form_data"])): ?> 
+
             <?php if (!empty($nama)): ?> 
         <h3>Data yang Diterima Peladen</h3> 
  
@@ -431,6 +455,7 @@ $pesan = $_SESSION['pesan'] ?? '';
  
         <p><?= nl2br(htmlspecialchars($pesan, ENT_QUOTES, 'UTF-8')) ?></p> 
       <?php endif; ?> 
+      <?php endif; ?>
  
     </section> 
   </main> 
