@@ -1,1 +1,1 @@
-# Pertemuan-11
+Menyalin artefak Pertemuan 10 ke Pertemuan 11
