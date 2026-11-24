@@ -14,3 +14,4 @@ Mengakses halaman utama melalui localhost apakah muncul atau tidak
 Menentukan Kueri SELECT pada tabel kontak
 Menjalankan kueri menggunakan mysqli_query()
 Memeriksa dan menguji keberhasilan Kueri SELECT 
+Penggunaan mysqli_fetch_assoc() untuk mengambil hasil kueri
