@@ -12,3 +12,4 @@ Memuat berkas koneksi pada index.php
 Memeriksa alur ketersediaan koneksi pada index p11
 Mengakses halaman utama melalui localhost apakah muncul atau tidak
 Menentukan Kueri SELECT pada tabel kontak
+Menjalankan kueri menggunakan mysqli_query()
