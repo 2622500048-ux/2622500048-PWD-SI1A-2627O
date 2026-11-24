@@ -17,3 +17,4 @@ Memeriksa dan menguji keberhasilan Kueri SELECT
 Penggunaan mysqli_fetch_assoc() untuk mengambil hasil kueri
 Memeriksa hasil pengambilan data 
 Menguji penyajian data dan kondisi ketika tidak ada data kontak
+Mengekspor basis data
