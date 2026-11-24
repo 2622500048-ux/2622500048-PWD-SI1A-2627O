@@ -11,7 +11,7 @@ $koneksi = mysqli_connect($host, $user, $password, $database);
 
 // Memeriksa keberhasilan koneksi. 
 if (!$koneksi) { 
-. die("Koneksi ke basis data gagal."); 
+die("Koneksi ke basis data gagal."); 
 } 
 
 require_once("koneksi.php"); 
