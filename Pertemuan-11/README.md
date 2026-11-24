@@ -6,3 +6,4 @@ Menentukan parameter koneksi basis data P11
 Mengatur pelaporan kesalahan MySQLi P11
 Mengimplementasikan koneksi php-MySQL menggunakan MySQLi
 Membuat file baru uji_koneksi.php dan menguji MySQL
+Menguji penanganan kegagalan koneksi koneksi PHP-MySQL
